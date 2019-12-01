@@ -8,25 +8,29 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "migrate": "postgrator --config postgrator-config.js"
   },
   "keywords": [],
-  "author": "Thomas `tomatao` Hudspith-Tatham <iammotivated@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "dependencies": "0.0.1",
     "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "helmet": "^3.15.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "migrate": "^1.6.2",
     "morgan": "^1.9.1",
-    "uuid": "^3.3.2",
+    "pg": "^7.14.0",
+    "postgrator": "^3.10.2",
+    "uuid": "^3.3.3",
     "valid-url": "^1.0.9",
     "winston": "^3.2.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.9",
-    "supertest": "^3.3.0"
+    "nodemon": "^1.19.4",
+    "supertest": "^3.4.2"
   }
 }
