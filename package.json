@@ -1,36 +1,25 @@
 {
-  "name": "bookmarks-server",
-  "version": "0.0.1",
-  "description": "",
-  "main": "src/server.js",
-  "scripts": {
-    "test": "mocha --require test/setup.js",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "predeploy": "npm audit",
-    "deploy": "git push heroku master",
-    "migrate": "postgrator --config postgrator-config.js"
-  },
-  "keywords": [],
-  "license": "MIT",
+  "name": "bookmarks",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
-    "dependencies": "0.0.1",
-    "dotenv": "^6.2.0",
-    "express": "^4.17.1",
-    "helmet": "^3.21.2",
-    "migrate": "^1.6.2",
-    "morgan": "^1.9.1",
-    "pg": "^7.14.0",
-    "postgrator": "^3.10.2",
-    "uuid": "^3.3.3",
-    "valid-url": "^1.0.9",
-    "winston": "^3.2.1"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
   },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.19.4",
-    "supertest": "^3.4.2"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
